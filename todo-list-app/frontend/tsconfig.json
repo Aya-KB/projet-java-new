@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es5",                       // La version ECMAScript cible (ES5 pour la compatibilité avec les anciens navigateurs)
+      "lib": ["dom", "es2015"],              // Librairies à inclure (ici, DOM et ES2015)
+      "allowJs": true,                       // Permet l'utilisation de fichiers JavaScript dans le projet
+      "skipLibCheck": true,                  // Ignore la vérification des types dans les fichiers de bibliothèques
+      "esModuleInterop": true,               // Permet l'importation des modules CommonJS dans des modules ES
+      "allowSyntheticDefaultImports": true,  // Permet l'importation de modules sans défaut (utile pour certains modules)
+      "strict": true,                        // Active toutes les options strictes pour une vérification stricte des types
+      "forceConsistentCasingInFileNames": true, // Assure la cohérence de la casse des noms de fichiers
+      "module": "esnext",                    // Utilise les modules ESNext (moderne) pour l'importation et l'exportation
+      "moduleResolution": "node",            // Utilise la résolution des modules selon Node.js
+      "resolveJsonModule": true,             // Permet d'importer des fichiers JSON
+      "isolatedModules": true,               // Permet à chaque fichier de fonctionner comme un module isolé
+      "noEmit": true,                        // Ne génère pas de fichiers JavaScript lors de la compilation, utilisé dans les projets React
+      "jsx": "react-jsx"                     // Utilisation du JSX spécifique à React 17 et supérieur
+    },
+    "include": [
+      "src"                                  // Indique à TypeScript d'inclure les fichiers sous le dossier `src`
+    ]
+  }
+  
